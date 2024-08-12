@@ -1,0 +1,17 @@
+#text {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .container {
+    position: relative;
+    height: 250vh;
+  }
+  
+  .circle {
+    position: fixed;
+    top: 125%;
+    left: -75%;
+  }

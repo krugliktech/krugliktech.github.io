@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Quantico);
+/* html, body {
+  background: #111;
+} */
+
+#container {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+}
+
+#stats {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --background-color: #f0eae3;
+  --main-text: #282f1e;
+  --red-color: #a41d20;
+}
+
+.page .cards {
+    width: 80%;
+    text-align: center;
+  }
+
+.cards {
+    display: flex;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    height: 50%;
+    /* width: 100%; */
+    /* min-width: 100%; */
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .border {
+    padding-left: 1px;
+    background-image: linear-gradient(to top, var(--background-color), rgba(0, 0, 0, 0.5), var(--background-color));
+  }
+  .card {
+    width: 25%;
+    aspect-ratio: 2.5/5;
+  
+    position: relative;
+  
+    text-align: center;
+    cursor: pointer;
+  
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    background-position-x: 0%;
+    background-size: 0%;
+  }
+  .card:hover {
+    background-position-x: center;
+    background-size: cover;
+    transition: background-position-x 1s ease;
+  }
+  .cards > .card:hover > h3,
+  .cards > .card:hover > p,
+  .cards > .card:hover > h2 {
+    color: white;
+    transition: color 0.5s ease;
+  }
+  .cards > .card > h3 {
+    color: var(--main-text);
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    font-weight: 600;
+    padding: 5%;
+  }
+  .cards > .card > p {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .cards > .card > h2 {
+    color: var(--red-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15em;
+    font-weight: 500;
+  }
+  .card-1 {
+    background-image: url(../public/assets/epam.png);
+  }
+  .card-2 {
+    background-image: url(../public/assets/ya.png);
+  }
+  .card-3 {
+    background-image: url(../public/assets/alpha.png);
+  }
+  .card-4 {
+    background-image: url(../public/assets/okko.jpg);
+  }
